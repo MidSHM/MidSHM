@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Anaheim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 15vh; /* Ajustado para uma altura menor */
+  margin-bottom: 2vh;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh; /* Ajustado para uma altura menor */
+  font-family: Actor, sans-serif;
+}
+
+header nav a {
+  color: #2a4eaa;
+  text-decoration: none;
+  font-size: 1.2rem; /* Reduzido o tamanho da fonte */
+}
+
+header nav .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+}
+
+header nav .inscreva-se {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao-inscreva-se {
+  color: #fff;
+  background-color: #f46363;
+  font-family: Actor, sans-serif;
+  font-size: 1rem; /* Reduzido o tamanho da fonte */
+  padding: 1vh 2vh; /* Reduzido o padding */
+  border-radius: 15px; /* Reduzido o raio da borda */
+  text-decoration: none;
+  margin: 1vh 0; /* Reduzido a margem */
+}
+
+main {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  font-family: Anaheim, sans-serif;
+  font-weight: 300;
+  color: #965e1b;
+  width: 80%; /* Aumentado a largura para melhor adaptação */
+  text-align: center;
+  font-size: 1.5rem; /* Reduzido o tamanho da fonte */
+}
+
+main .botao-voltar-pagina {
+  margin-top: 5vh;
+  background-color: #965e1b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: Anaheim, sans-serif;
+  padding: 1.5vh 3vh; /* Ajustado o padding */
+  text-decoration: none;
+}
+
+/* Adicione media queries conforme necessário para ajustar estilos em diferentes larguras de tela */
+@media screen and (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav .links {
+    width: 100%;
+  }
+
+  header nav .inscreva-se {
+    width: 100%;
+    margin-top: 2vh; /* Aumentado o espaçamento superior */
+  }
+}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Actor&family=Anaheim&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 15vh; /* Ajustado para uma altura menor */
+  margin-bottom: 2vh;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%; /* Ajustado para melhor adaptação em telas menores */
+  margin: 0 auto; /* Centralizado */
+  height: 15vh; /* Ajustado para uma altura menor */
+  font-family: Actor, sans-serif;
+}
+
+header nav a {
+  color: #2a4eaa;
+  text-decoration: none;
+  font-size: 1.2rem; /* Reduzido o tamanho da fonte */
+}
+
+header nav .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%; /* Ajustado para melhor adaptação em telas menores */
+}
+
+header nav .inscreva-se {
+  width: 40%; /* Ajustado para melhor adaptação em telas menores */
+  display: flex;
+  justify-content: flex-end; /* Alinhado à direita */
+  align-items: center;
+}
+
+.botao-inscreva-se {
+  color: #fff;
+  background-color: #f46363;
+  font-family: Actor, sans-serif;
+  font-size: 1rem; /* Reduzido o tamanho da fonte */
+  padding: 1vh 2vh; /* Reduzido o padding */
+  border-radius: 15px; /* Reduzido o raio da borda */
+  text-decoration: none;
+  margin: 1vh 0; /* Reduzido a margem */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-family: Anaheim, sans-serif;
+  font-size: 2rem; /* Reduzido o tamanho da fonte */
+  color: #965e1b;
+  margin: 2vh 0; /* Adicionado espaçamento superior e inferior */
+}
+
+main .paragrafos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os parágrafos se ajustem à largura da tela */
+  width: 90%; /* Ajustado para melhor adaptação em telas menores */
+  justify-content: space-around;
+}
+
+main .paragrafos h2 {
+  width: 100%;
+  font-family: Anaheim, sans-serif;
+  font-weight: 300;
+  margin: 2vh 1vw; /* Adicionado espaçamento superior e inferior, ajustado para unidades relativas */
+}
+
+main img {
+  width: 30%; /* Ajustado para melhor adaptação em telas menores */
+  max-width: 200px; /* Limitado a largura máxima */
+  height: auto; /* Mantém a proporção original da imagem */
+  margin-top: 3vh;
+}
